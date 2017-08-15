@@ -1,0 +1,20 @@
+body{
+	font-size:24px;
+}
+
+.customDiv{
+	padding: 20px;
+	/*border: 1px solid #000;*/
+}
+
+.customW {
+	width:50% ;
+	float: left; //raises the element and shifts it to a particular side
+	display: inline; //allows other elements to be on the same line
+}
+
+#div3 {
+	float: right;
+	width: 45%;
+	display: inline;
+}
