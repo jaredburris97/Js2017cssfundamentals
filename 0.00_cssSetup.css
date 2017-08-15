@@ -1,0 +1,19 @@
+body {
+
+	//this is a line comment
+	/* this is a block comment */
+
+	background-color: #e5e5e5; //I just figured out hex decimal color= #RRGGBB
+} 
+
+
+
+div	{
+	margin: 20px;
+}
+
+
+
+span{
+	font-weight: bold;
+}
