@@ -1,9 +1,28 @@
+/* COLORS 
+background purple #5A2B5F
+perfect gold	  #FFD700
+
+*/
+
 body{
-	background-color: lightblue;
+	height: 100%;
+	width: 100%;
+	background-color: #5A2B5F;
+}
+
+h1 {
+	text-align: center;
+	color: #FFD700;
+	text-shadow: 2px 2px black;
+}
+
+div	{
+	color: blue;
 }
 
 .wrapper {
-	margin: 5px;
+	position: relative;
+	margin: auto;
 }
 
 .face{
