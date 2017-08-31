@@ -1,143 +1,239 @@
 /* COLORS 
 background purple #5A2B5F
 perfect gold	  #FFD700
-
 */
-
 body{
 	height: 100%;
 	width: 100%;
+	display: flex;
 	background-color: #5A2B5F;
 }
-
 h1 {
 	text-align: center;
 	color: #FFD700;
-	text-shadow: 2px 2px black;
+	text-shadow: 1px 1px black;
+	padding: 5px;
+	border-radius: 100px;
+	animation: eyegold 1s ease-in-out 0s infinite alternate;
 }
-
 div	{
 	color: blue;
 }
-
 .wrapper {
 	position: relative;
 	margin: auto;
+	animation: movetheking 10s ease-in-out 0s infinite alternate;
 }
-
 .face{
 	width: 300px;
 	height: 300px;
-	border: solid 2px grey;
+	border: solid 2px #FFD700;
 	background-color: black;
 	border-radius: 300px;
-	
 }
-
+.spout{
+	width: 50px;
+	height: 30px;
+	border-top: solid 2px #FFD700;
+	border-right: solid 2px #FFD700;
+	border-left: solid 2px #FFD700;
+	border-radius: 5px;
+	background-color: black;
+	position: relative;
+	left: 125px;
+	top: -20px;
+	z-index: 1;
+}
 .lefteye{
 	width: 25px;
 	height: 50px;
-	border: solid 1px red;
+	border: solid 1px #FFD700;
 	background-color: white;
 	border-radius: 25px;
 	position: relative;
-	left: 200px;
-	top: 50px;
+	left: 225px;
+	top: 40px;
+	animation: eyegold 10s ease-in-out 3s infinite alternate, moveLeye 10s ease-in-out 10s infinite alternate;
 }
-
 .leftbrow{
 	width: 50px;
-	height: 20px;
+	height: 30px;
 	/*border: solid 1px white;*/
 	background-color: black;
 	position: relative;
 	z-index: 1;
-	left: 180px;
-	top: -54px;
-	transform: rotate(-45deg);
+	left: 205px;
+	top: -74px;
+	animation: eyebrowangryL 10s ease-in-out 3s infinite alternate, moveLbrow 10s ease-in-out 10s infinite alternate;
 }
-
 .righteye{
 	width: 25px;
 	height: 50px;
-	border: solid 1px red;
+	border: solid 1px #FFD700;
 	background-color: white;
 	border-radius: 25px;
 	position: relative;
-	left: 100px;
-	top: 0px;
+	left: 125px;
+	top: -13px;
+	animation: eyegold 10s ease-in-out 3s infinite alternate, moveReye 10s ease-in-out 10s infinite alternate;
 }
-
 .rightbrow{
 	width: 50px;
-	height: 20px;
+	height: 30px;
 	/*border: solid 1px white;*/
 	background-color: black;
 	position: relative;
 	z-index: 1;
-	left: 95px;
-	top: -76px;
-	transform: rotate(45deg);
+	left: 120px;
+	top: -104px;
+	animation: eyebrowangryR 10s ease-in-out 3s infinite alternate, moveRbrow 10s ease-in-out 10s infinite alternate;
 }
-
-.mustache{
+.mouth{
 	width: 200px;
 	height: 100px;
-	border: solid 1px lightgrey;
+	border: solid 1px #FFD700;
 	background-color: white;
 	border-radius: 10px 10px 200px 200px;
 	position: relative;
-	/*z-index: 1;*/
-	left: 60px;
-	top: -25px;
+	z-index: 1;
+	left: 75px;
+	top: -50px;
+	animation: eyegold 10s ease-in-out 3s infinite alternate, movemouth 10s ease-in-out 10s infinite alternate;
 }
-
+.tooth1 {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 20px 0 20px;
+	border-color: #000000 transparent transparent transparent;
+	position: relative;
+	z-index: 1;
+	border-radius: 40px;
+	top: -160px;
+	left: 115px;
+	animation: movetoothA 10s ease-in-out 10s infinite alternate;
+}
+.tooth2 {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 40px 20px 0 20px;
+	border-color: #000000 transparent transparent transparent;
+	position: relative;
+	z-index: 1;
+	border-radius: 40px;
+	top: -200px;
+	left: 200px;
+	animation: movetoothB 10s ease-in-out 10s infinite alternate;
+}
 .lefthand{
 	width: 125px;
 	height: 125px;
-	border: solid 2px grey;
+	border: solid 2px #FFD700;
 	background-color: black;
 	border-radius: 150px;
 	position: relative;
-	top: -125px;
-	left: -50px;
+	top: -230px;
+	left: -100px;
 	z-index: 1;
+	animation: moveLhand 1s ease-in-out 2s infinite alternate;
 }
-
 .righthand{
-	width: 150px;
-	height: 150px;
-	border: solid 2px grey;
+	width: 125px;
+	height: 125px;
+	border: solid 2px #FFD700;
 	background-color: black;
 	border-radius: 150px;
 	position: relative;
-	top: -275px;
-	left: 225px;
+	top: -355px;
+	left: 270px;
+	z-index: 1;
+	animation: moveRhand 1s ease-in-out 2s infinite alternate;
 }
-
 .leftfoot{
-	width: 30px;
-	height: 100px;
-	border: solid 2px grey;
+	width: 50px;
+	height: 150px;
+	border-bottom: solid 5px #FFD700;
 	background-color: black;
 	position: relative;
-	top: -325px;
+	top: -420px;
 	left: 75px;
-	z-index: -1;
+	animation: walkwalk 0.5s ease-in-out 0.5s infinite alternate;
 }
-
 .rightfoot{
-	width: 30px;
-	height: 100px;
-	border: solid 2px grey;
+	width: 50px;
+	height: 150px;
+	border-bottom: solid 5px #FFD700;
 	background-color: black;
 	position: relative;
-	top: -430px;
+	top: -575px;
 	left: 175px;
-	z-index: -1;
+	animation: walkwalk 0.5s ease-in-out 1s infinite alternate;
 }
-
-
-
-
-
+.shadow {
+	width: 250px;
+	height: 50px;
+	position: relative;
+	background-color: black;
+	border-radius: 250px;
+	z-index: -1;
+	opacity: 0.3;
+	top: -600px;
+	left: 22px;
+}
+@keyframes movetheking {
+	from {left: 0px;}
+	to {left: 500px;}
+}
+@keyframes moveLhand {
+	from {top: -230px}
+	to {top: -210px}
+}
+@keyframes moveRhand {
+	from {top: -355px}
+	to {top: -335px}
+}
+@keyframes moveReye {
+	from {left: 125px;}
+	to {left: 45px;}
+}
+@keyframes moveLeye {
+	from {left: 225px;}
+	to {left: 145px;}
+}
+@keyframes moveLbrow {
+	from {left: 205px;}
+	to {left: 125px;}
+}
+@keyframes moveRbrow {
+	from {left: 120px;}
+	to {left: 40px;}
+}
+@keyframes movemouth {
+	from {left: 75px;}
+	to {left: 25px;}
+}
+@keyframes movetoothA {
+	from {left: 115px;}
+	to {left: 75px;}
+}
+@keyframes movetoothB {
+	from {left: 200px;}
+	to {left: 150px;}
+}
+@keyframes walkwalk {
+	from {transform: rotateX(0deg);}
+	to {transform: rotateX(60deg);}
+}
+@keyframes eyegold {
+	from {background-color: white;}
+	to {background-color: #FFD700;}
+}
+@keyframes eyebrowangryR {
+	from {transform: rotate(0deg)}
+	to {transform: rotate(45deg);}
+}
+@keyframes eyebrowangryL {
+	from {transform: rotate(0deg)}
+	to {transform: rotate(-45deg);}
+}
